@@ -119,10 +119,6 @@ figure.snip1157 .author h5 span {
     background-color: #f2f2f2; 
 }
 
-.services-section {
-    background-color:  #0e0c0c;  
-    
-}
 
 .service-card {
     padding: 20px;
@@ -552,6 +548,7 @@ figure.snip1157 .author h5 span {
   transform: translateY(-50%); /* توسيط الدائرة عموديًا */
   top: -160px; /* رفع الدائرة للأعلى */
   animation: rotateCircle 20s linear infinite; /* تدوير الدائرة ككل */
+  z-index: 1000;
 
 }
 
@@ -576,7 +573,9 @@ figure.snip1157 .author h5 span {
   transform: scale(1.2);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-
+.icons-circle-wrapper {
+  margin-top: 3rem;  /* Adjust this value as needed */
+}
 .service-name {
   position: absolute;
   top: 100%; /* وضع النص أسفل الأيقونة */
