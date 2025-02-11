@@ -1,0 +1,382 @@
+
+.hero-section {
+  position: relative;
+  height: 50vh;
+  background-image: url('../../../assets/images/company1.avif');
+  background-size: cover;
+  background-position: center;
+  color: #1E1E1E;
+}
+
+/* Overlay with black blur effect */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);  /* Semi-transparent black */
+  backdrop-filter: blur(5px);  /* Adding blur effect */
+  z-index: 1;
+}
+
+/* Content container */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;  
+  display: flex;
+  justify-content: Start;
+  align-items: center;
+}
+
+/* Left side content (Contact Us text) */
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 30px; 
+  margin-top: 50px; 
+  width:300px;
+}
+
+/* Make image height 25% */
+.hero-section img {
+  height: 25%;
+  width: auto;
+  object-fit: cover;
+}
+
+/* AOS animations */
+.hero-title, .button-container {
+  opacity: 0;  /* Start hidden for AOS */
+}
+
+/* Optional: Ensure the text is not centered but on the left */
+.text-left {
+  text-align: left;
+}
+
+/* Adjust for mobile screens */
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 2rem;  /* Make the title smaller on mobile */
+  }
+  .hero-section img {
+    height: auto;  /* Make the image responsive */
+  }
+}
+
+
+.about-container {
+  font-family: 'Merriweather', serif;
+  color: #b8b5b5;
+
+  Hero Video Section
+  .hero-video-section {
+    position: relative;
+    height: 500px;
+
+    .video-bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      padding: 180px 20px;
+      text-align: center;
+
+      .hero-title {
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .hero-subtitle {
+        font-size: 24px;
+      }
+    }
+  }
+
+      .timeline-section {
+    background: #1E1E1E;
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .timeline-item {
+      background: #1E1E1E;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+  }
+
+      .team-section {
+    .team-card {
+      background: #1E1E1E;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+      text-align: center;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .team-image {
+        width: 120px;
+        height: 120px;
+        border: 4px solid #fff;
+        object-fit: cover;
+      }
+    }
+  }
+
+      .testimonials-section {
+    background: #f5f5f5;
+
+    .carousel-item {
+      font-size: 18px;
+      color: #ff4444;
+      p {
+        font-style: italic;
+        margin-bottom: 5px;
+      }
+      h4 {
+        font-weight: 600;
+        color: #ff4444;
+      }
+    }
+  }
+
+      .swatches-section {
+    .swatch {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: auto;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+
+/* Vision & Journey Section */
+.vision-journey-section {
+  background-color:#1E1E1E;;
+  padding: 80px 0;
+}
+
+.vision-journey-section h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #f53333;
+  margin-bottom: 60px;
+}
+
+/* Timeline Container */
+.journey-timeline {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+/* Timeline Items */
+.journey-timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+  position: relative;
+  animation: slideIn 1s ease-out forwards; /* Ensure animation persists after completion */
+  opacity: 0; /* Keep opacity at 0 initially */
+  transform: translateY(30px); /* Initial position */
+}
+
+.journey-timeline-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.journey-timeline-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.journey-timeline-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Timeline Line */
+.journey-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #ddd;
+  transform: translateX(-50%);
+}
+
+/* Timeline Icon */
+.journey-timeline-item .journey-timeline-icon {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border: 4px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.journey-timeline-item .journey-timeline-icon.bg-primary {
+  background-color: #007bff;
+}
+
+.journey-timeline-item .journey-timeline-icon.bg-success {
+  background-color: #28a745;
+}
+
+.journey-timeline-item .journey-timeline-icon.bg-warning {
+  background-color: #f53333;
+
+}
+
+/* Content Section */
+.journey-timeline-item .journey-timeline-content {
+  margin-left: 80px;
+  padding: 30px;
+  background-color: #f53333;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 80px);
+  background-color: #f9f9f9;
+  transform: scale(0.98);
+  transition: all 0.3s ease;
+}
+
+.journey-timeline-item .journey-timeline-content h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f53333;
+  margin-bottom: 10px;
+}
+
+.journey-timeline-item .journey-timeline-content p {
+  font-size: 16px;
+  color: #b8b5b5;
+  line-height: 1.6;
+}
+
+/* Hover Effect */
+.journey-timeline-item:hover .journey-timeline-content {
+  transform: scale(1);
+}
+
+.journey-timeline-item:hover .journey-timeline-icon {
+  transform: translateX(-50%) scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Keyframes for Slide-in Animation */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+h2,h3
+{
+  color: #f53333;
+
+}.vision-journey-section {
+  background: #1E1E1E;
+
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .timeline-item {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    &.reverse {
+      flex-direction: row-reverse; /* يعكس ترتيب الصورة والنص */
+    }
+
+    .timeline-image {
+      width: 150px;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 50%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    .timeline-content {
+      background: #1E1E1E;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+      h4 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #f53333;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #d1d1d1;
+      }
+    }
+  }
+}

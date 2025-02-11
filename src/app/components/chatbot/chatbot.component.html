@@ -1,0 +1,50 @@
+<div class="chat-popup" [ngClass]="{ show: isChatOpen }">
+  <!-- Chat Header -->
+  <div class="online-chat-header">
+    <img src="../../../assets/images/welcome.png" alt="Chat Icon" />
+    <p style="font-size: 0.9rem;">How Can We Assist You Today?</p>
+    <button class="close-btn" (click)="toggleChat()"></button>
+  </div>
+
+  <!-- Chat Area -->
+  <div class="chat-area">
+    <!-- Dynamic Messages -->
+    <div
+      *ngFor="let message of messages"
+      [ngClass]="{
+        'income-msg': message.sender === 'bot',
+        'out-msg': message.sender === 'user'
+      }"
+    >
+      <img
+        *ngIf="message.sender === 'bot'"
+        src="../../../assets/images/admin.png"
+        class="avatar"
+        alt="Bot"
+      />
+      <span class="msg">{{ message.text }}</span>
+    </div>
+
+    <!-- Static Questions -->
+    <div
+      *ngFor="let qa of visibleQaList"
+      class="static-question-msg"
+      (click)="handleQuestion(qa.question)"
+    >
+      <span class="msg">{{ qa.question }}</span>
+    </div>
+  </div>
+
+  <!-- Input Area -->
+  <div class="input-area">
+    <input
+      type="text"
+      placeholder="Type your message..."
+      [(ngModel)]="userMessage"
+    />
+    <button class="submit" (click)="sendMessage()">Send</button>
+  </div>
+</div>
+
+<!-- Chat Toggle Button -->
+<button class="chat-btn" (click)="toggleChat()">💬</button>

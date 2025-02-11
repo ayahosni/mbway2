@@ -1,0 +1,54 @@
+body{
+    background-color: #000;  
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Lora', serif;
+    /* cursor: url('../src/assets/images/Aura Gradient Animated--pointer--SweezyCursors.cur'), auto; */
+
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+:root {
+    --main-color: #cd9c20; 
+  }
+
+
+@media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+    
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .container {
+      padding: 30px;
+    }
+  }
+
+  
+
+      

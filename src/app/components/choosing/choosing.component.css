@@ -1,0 +1,68 @@
+
+.card {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .card i {
+    color: #0e0c0c; /* Icon color inside the circle */
+    background-color: #f53333 ; 
+    padding: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px; /* Center the circle and add spacing */
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .card-title {
+    font-weight: bold;
+    margin-top: 10px;
+    color:#f53333;
+   
+  }
+  
+  .container h2 {
+    font-weight: bold;
+    color:#f53333;
+  }
+  
+  .container p {
+    color: #b8b5b5;
+  }
+  
+  .service-card {
+    padding: 15px; 
+  }
+
+  .container h2 {
+    font-size: 1.5rem; 
+  }
+
+  .container p {
+    font-size: 1rem; 
+  }
+
+  .card i {
+    width: 50px; 
+    height: 50px;
+  }
+
+  .card-title {
+    font-size: 1rem; 
+  }
+  .bara
+  {
+    color:#b8b5b5 !important; 
+  }
+  .back{
+    background-color:#1E1E1E;
+    border: none !important;
+  
+  }

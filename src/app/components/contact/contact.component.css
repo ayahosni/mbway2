@@ -1,0 +1,277 @@
+.hero-section {
+    position: relative;
+    height: 50vh;
+    background-image: url('../../../assets/images/system-call-center.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* إضافة هذه الخاصية لجعل الصورة ثابتة */
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 300px;
+}
+
+.hero-section img {
+    height: 25%;
+    width: auto;
+    object-fit: cover;
+}
+
+
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: normal;
+    background: #fafafa;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+a {
+    transition: 0.3s all ease;
+    color: #f53333;
+
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: black;
+}
+
+.heading-section {
+    font-size: 28px;
+    color: black;
+}
+
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.form-control {
+    height: 36px;
+    background: #e7e1e1;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus, .form-control:active {
+   color: #f53333
+
+    !important;
+}
+
+textarea.form-control {
+    height: inherit !important;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.contact-wrap {
+    background: #e7e1e1;
+}
+
+.info-wrap {
+    height: 400px;
+}
+
+.dbox {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.dbox p {
+    margin-bottom: 0;
+}
+
+.dbox span {
+    font-weight: 500;
+    color: black;
+}
+
+.dbox a {   
+     color: #f53333;
+
+}
+
+.dbox .icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color:    #f53333;
+    
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.dbox .icon:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+.dbox .icon span {
+    font-size: 20px;
+    color: white;
+}
+
+.dbox .text {
+    width: 100%;
+}
+
+i {
+    color: white;
+    font-size: 2em;
+}
+
+.contactForm .label {
+    color: black;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.contactForm .form-control {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+#contactForm .error {
+    color: red;
+    font-size: 12px;
+}
+
+#contactForm .form-control {
+    font-size: 16px;
+}
+
+#message {
+    resize: vertical;
+}
+
+#form-message-warning {
+    color: #f53333;
+}
+
+#form-message-success {
+    color: #28a745;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn {
+    outline: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(243, 63, 63); 
+    min-width: 200px;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    padding: 16px 20px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.95;
+}
+
+.btn .animation {
+    border-radius: 100%;
+    animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+    }
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.attach {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 75vh;
+}
+.btn-primary {
+    background: linear-gradient(to right, #F33F3F, #f53333, #FFFFFF);
+    border-color:  rgb(243, 63, 63);
+  }
+  .icon-background {
+    background-color:   #f53333;
+     
+    color: white; 
+    padding: 10px; 
+    border-radius: 50%; 
+    display: inline-block; 
+  }
+  .btn-custom {
+    background-color: #f53333; 
+    color: white;
+    border: none; 
+    padding: 10px 20px; 
+    transition: background-color 0.3s ease; 
+  }
+  
+  .btn-custom:hover {
+    background-color: darkred; 
+    transform: scale(1.05); 
+  }
