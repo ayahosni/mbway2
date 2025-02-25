@@ -1,60 +1,54 @@
-<div class="about-container">
-    <!-- Hero Section with Video Background -->
-    <div class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="container-fluid hero-content">
-          <div class="row">
-            <div class="col-md-6 text-left text-white">
-              <h1 class="hero-title aos-init aos-animate" data-aos="fade-left" data-aos-duration="1500">
-               
-        <p class="hero-subtitle">About Us</p>
-              </h1>
-            </div>
-          </div>
+<!-- Hero Section with Video Background -->
+<div class="hero-section">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <div class="row">
+      <div class="col-12 col-md-6 text-center text-md-left text-white">
+        <h1 class="hero-title" data-aos="fade-left" data-aos-duration="1500">
+          <p class="hero-subtitle">About Us</p>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="vision-journey-section py-5" id="timeline">
+  <div class="container">
+    <h2 class="display-4 mb-5 font-weight-bold text-center">Our Vision & Journey</h2>
+    <div class="timeline">
+      <!-- Timeline Item 1 -->
+      <div class="timeline-item">
+        <div class="timeline-image">
+          <img src="../../../assets/images/company1.avif" alt="Founded 2021" class="img-fluid">
+        </div>
+        <div class="timeline-content">
+          <h4>Founded on June 26, 2021</h4>
+          <p>Has swiftly emerged as a multifaceted leader in various industries, headquartered in Istanbul, Turkey, by Dr. M Masood.</p>
         </div>
       </div>
   
-      <section class="vision-journey-section py-5" id="timeline">
-        <div class="container">
-          <h2 class="display-4 mb-5 font-weight-bold text-center">Our Vision & Journey</h2>
-          <div class="timeline">
-            <!-- Timeline Item 1 -->
-            <div class="timeline-item">
-              <div class="timeline-image">
-                <img src="../../../assets/images/company1.avif" alt="Founded 2021">
-              </div>
-              <div class="timeline-content">
-                <h4>Founded on June 26, 2021</h4>
-                <p>Has swiftly emerged as a multifaceted leader in various industries, headquartered in Istanbul, Turkey, by Dr. M Masood.</p>
-              </div>
-            </div>
-      
-            <!-- Timeline Item 2 -->
-            <div class="timeline-item">
-              <div class="timeline-image">
-                <img src="../../../assets/images/company.avif" alt="MBway LLC 2023">
-              </div>
-              <div class="timeline-content">
-                <h4>In June 26, 2023 Changed To MBway LLC</h4>
-                <p>MBway operates across sectors including medical services, tourism, engineering, trade, and more.</p>
-              </div>
-            </div>
-          </div>
+      <!-- Timeline Item 2 -->
+      <div class="timeline-item">
+        <div class="timeline-image">
+          <img src="../../../assets/images/company.avif" alt="MBway LLC 2023" class="img-fluid">
         </div>
-      </section>
-      
-      
-    
-    
-      
-   <!-- Meet Our Team with Interactive Cards -->
+        <div class="timeline-content">
+          <h4>In June 26, 2023 Changed To MBway LLC</h4>
+          <p>MBway operates across sectors including medical services, tourism, engineering, trade, and more.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+<!-- Meet Our Team with Interactive Cards -->
 <section class="team-section py-5 text-center">
   <div class="container">
     <h2 class="display-4 font-weight-bold mb-5">Meet Our Visionary Founder</h2>
     <div class="row justify-content-center">
-      <div class="col-md-6 my-2">
+      <div class="col-sm-10 col-md-8 col-lg-6 my-2">
         <div class="team-card">
-          <img [src]="teamMembers[0].image" alt="{{ teamMembers[0].name }}" class="rounded-circle team-image" />
+          <img [src]="teamMembers[0].image" alt="{{ teamMembers[0].name }}" class="rounded-circle team-image mx-auto d-block" />
           <h3>{{ teamMembers[0].name }}</h3>
           <p>{{ teamMembers[0].role }}</p>
         </div>
@@ -62,7 +56,3 @@
     </div>
   </div>
 </section>
-
-    
-  </div>
-  

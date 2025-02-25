@@ -25,6 +25,7 @@
 
 .navbar-nav .nav-item {
   margin: 0 10px;
+  text-align:center;
 }
 
 .navbar-nav .nav-link {
@@ -118,4 +119,36 @@ body {
   .highlight-letters {
     font-size: 1.5rem;
   }
+}
+/* Navbar Styles */
+.custom-navbar {
+  backdrop-filter: blur(30px);
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  padding: 1rem 0.5rem; /* زيادة الـ padding على محور Y */
+  color: white !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: rgb(243, 63, 63);
+}
+
+/* Toggler Icon Styles */
+.toggler-icon {
+  color: white; /* جعل الأيقونة بيضاء */
+  font-size: 24px; /* حجم الأيقونة */
+}
+
+.navbar-toggler {
+  border: none; /* إزالة الحدود حول الزر */
+  background-color: transparent; /* جعل الخلفية شفافة */
 }

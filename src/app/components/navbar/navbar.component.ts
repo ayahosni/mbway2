@@ -9,5 +9,10 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-
+  closeNavbar() {
+    const navbarCollapse = document.getElementById('navbarSupportedContent');
+    if (navbarCollapse) {
+      navbarCollapse.classList.remove('show'); // إزالة الفئة "show" لإغلاق القائمة
+    }
+  }
 }

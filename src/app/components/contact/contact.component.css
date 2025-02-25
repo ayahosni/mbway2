@@ -169,8 +169,7 @@ textarea.form-control {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    color:    #680e0e;
-    
+    color: #680e0e;
     margin: 0 auto;
     margin-bottom: 16px;
 }
@@ -185,6 +184,24 @@ textarea.form-control {
     color: white;
 }
 
+.icon-background {
+    background-color: #ac0f0f;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .dbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .dbox .icon {
+        margin: 10px;
+    }
+}
 .dbox .text {
     width: 100%;
     text-align: center;
@@ -291,14 +308,7 @@ i {
     background: linear-gradient(to right, #F33F3F, #f53333, #FFFFFF);
     border-color:  rgb(243, 63, 63);
   }
-  .icon-background {
-    background-color:   #ac0f0f;
-     
-    color: white; 
-    padding: 10px; 
-    border-radius: 50%; 
-    display: inline-block; 
-  }
+ 
   .btn-custom {
     background-color: #ac0f0f; 
     color: white;

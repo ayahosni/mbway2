@@ -95,3 +95,32 @@ footer{
       font-size: 1.5rem;
     }
   }
+  /* General Footer Styles */
+footer {
+  background-color: #333533;
+  color: white;
+  padding: 2rem 0;
+}
+
+/* Static Text Styles */
+
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+  .static-text {
+    text-align: center !important; /* تمركز العنوان في المنتصف */
+    margin-left:50px;
+  }
+
+  /* Center the logo or text inside static-text */
+  .static-text span {
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  /* Adjust padding for better spacing on small screens */
+  footer .col-md-3,
+  footer .col-md-4 {
+    margin-bottom: 1rem;
+  }
+}

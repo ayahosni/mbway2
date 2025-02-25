@@ -570,98 +570,9 @@ figure.snip1157 .author h5 span {
   background-color: darkred; /* لون الخلفية يتحول إلى أحمر داكن عند التحويم */
   transform: scale(1.05); /* تكبير الزر قليلاً عند التحويم */
 }
-.icons-circle {
-  position: absolute; /* تغيير الوضع إلى absolute */
-  width: 350px; /* حجم الدائرة */
-  height: 400px;
-  left: 15%; /* تحريك الدائرة إلى اليسار */
-  top: 50%; /* ضبط الموقع الرأسي */
-  transform: translateY(-50%); /* توسيط الدائرة عموديًا */
-  top: -160px; /* رفع الدائرة للأعلى */
-  animation: rotateCircle 20s linear infinite; /* تدوير الدائرة ككل */
-  z-index: 1000;
 
-}
 
-.icon {
-  position: absolute;
-  width: 60px; /* حجم الأيقونات */
-  height: 60px;
-  background-color: #f53333;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 24px; /* حجم الخط */
-  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
 
-.icon:hover {
-  background-color: darkred;
-  transform: scale(1.2);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-.icons-circle-wrapper {
-  margin-top: 3rem;  /* Adjust this value as needed */
-}
-.service-name {
-  position: absolute;
-  top: 100%; /* وضع النص أسفل الأيقونة */
-  left: 50%;
-  transform: translateX(-50%) scale(0); /* بدء النص بحجم صغير */
-  white-space: nowrap; /* منع النص من الانتقال لسطر جديد */
-  font-family: 'Poppins', sans-serif; /* خط أنيق */
-  font-size: 16px; /* حجم الخط */
-  font-weight: 600; /* سمك الخط */
-  color: #333; /* لون النص */
-  background-color: white; /* لون خلفية النص */
-  padding: 8px 16px; /* تباعد داخلي */
-  border-radius: 20px; /* زوايا مدورة */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل */
-  opacity: 0; /* إخفاء النص بشكل افتراضي */
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
-  z-index: 2; /* z-index للنص (أعلى من الأيقونات) */
-}
-
-.icon:hover + .service-name {
-  opacity: 1; 
-  visibility: visible ;
-  transform: translateX(-50%) scale(1); 
-}
-
-@keyframes rotateCircle {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.icon:nth-child(1) { top: 0; left: 50%; transform: translate(-50%, 0); }
-.service-name[data-sector="medical"] { top: 60px; left: 50%; transform: translateX(-50%); }
-
-.icon:nth-child(2) { top: 20%; left: 90%; transform: translate(-50%, -50%); }
-.service-name[data-sector="tourism"] { top: calc(20% + 60px); left: 90%; transform: translateX(-50%); }
-
-.icon:nth-child(3) { top: 50%; left: 100%; transform: translate(-50%, -50%); }
-.service-name[data-sector="engineering"] { top: calc(50% + 60px); left: 100%; transform: translateX(-50%); }
-
-.icon:nth-child(4) { top: 80%; left: 90%; transform: translate(-50%, -50%); }
-.service-name[data-sector="student-services"] { top: calc(80% + 60px); left: 90%; transform: translateX(-50%); }
-
-.icon:nth-child(5) { top: 100%; left: 50%; transform: translate(-50%, -100%); }
-.service-name[data-sector="trade"] { top: calc(100% + 60px); left: 50%; transform: translateX(-50%); }
-
-.icon:nth-child(6) { top: 80%; left: 10%; transform: translate(-50%, -50%); }
-.service-name[data-sector="real-estate"] { top: calc(80% + 60px); left: 10%; transform: translateX(-50%); }
-
-.icon:nth-child(7) { top: 50%; left: 0%; transform: translate(-50%, -50%); }
-.service-name[data-sector="brand-promotion"] { top: calc(50% + 60px); left: 0%; transform: translateX(-50%); }
 
 
 .section-title {
@@ -703,4 +614,29 @@ figure.snip1157 .author h5 span {
   .section-text {
     font-size: 1rem;
   }
+}
+/* Loading Spinner */
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
