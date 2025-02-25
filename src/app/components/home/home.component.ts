@@ -21,7 +21,6 @@ export class HomeComponent implements AfterViewInit, OnInit {
   }
 
   ngAfterViewInit(): void {
-    // إعداد Typed.js لإنشاء النص الديناميكي
     const options = {
       strings: [
         'Your Partner in Progress <span> Medical Services, Engineering, Tourism, Education </span>'

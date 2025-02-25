@@ -8,7 +8,7 @@
   }
   
   .card i {
-    color: #0e0c0c; /* Icon color inside the circle */
+    color: #fff; /* Icon color inside the circle */
     background-color: #f53333 ; 
     padding: 20px;
     border-radius: 50%;

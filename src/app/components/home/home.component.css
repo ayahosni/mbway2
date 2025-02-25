@@ -222,7 +222,7 @@ figure.snip1157 .author h5 span {
   }
   
   .card i {
-    color: #0e0c0c; /* Icon color inside the circle */
+    color: #fff; /* Icon color inside the circle */
     background-color: #f53333 ; /* Circle color */
     padding: 20px;
     border-radius: 50%;
@@ -260,18 +260,29 @@ figure.snip1157 .author h5 span {
   }
   
   .dynamic-text {
-    font-size: 1.2rem; 
-
+    font-size: 1.2rem;
     margin-top: 0.5rem;
     font-weight: normal;
-    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4); 
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
     font-weight: bold;
-
   }
-  
-  .dynamic-text span {
-   color: linear-gradient(135deg, #420404, #000, #95b9dd);
 
+  .dynamic-text span {
+    color: linear-gradient(135deg, #420404, #000, #95b9dd);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .dynamic-text {
+      font-size: 1rem;
+      margin-top: 0.3rem;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .dynamic-text {
+      font-size: 1.5rem;
+      margin-top: 0.7rem;
+    }
   }
   .hero-section {
     position: relative;
@@ -527,6 +538,26 @@ figure.snip1157 .author h5 span {
   font-weight:bold; /* سمك عادي */
 }
 
+@media only screen and (max-width: 768px) {
+  .highlight-letters {
+    font-size: 3rem; /* تقليل حجم النص على الشاشات الصغيرة */
+  }
+
+  .small-red-text {
+    font-size: 3rem; /* تقليل حجم النص على الشاشات الصغيرة */
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .highlight-letters {
+    font-size: 6rem; /* زيادة حجم النص على الشاشات الكبيرة */
+  }
+
+  .small-red-text {
+    font-size: 6rem; /* زيادة حجم النص على الشاشات الكبيرة */
+  }
+}
+
 .btn-custom {
   background-color: f53333; /* لون الخلفية أحمر */
   color: white; /* لون النص أبيض */
@@ -656,7 +687,7 @@ figure.snip1157 .author h5 span {
   width: 100%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
-  border-radius: 20%;
+  border-radius: 10%;
   margin: 0;
 }
 

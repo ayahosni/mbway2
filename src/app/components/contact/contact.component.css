@@ -87,17 +87,23 @@ h1, h2, h3, h4, h5,
 
 @media (max-width: 768px) {
     .img {
-        width: 75px;
-        height: 75px;
+        width: 75%;
+        height: 75%;
         margin-left: 25px;
+        border-radius: 20%;
+        background-size: cover;
+
+
     }
 }
 
 @media (max-width: 480px) {
     .img {
-        width: 50px;
-        height: 50px;
-        margin-left: 10px;
+        width: 50%;
+        height: 50%;
+        margin-left: 20px;
+        border-radius: 20%;
+        background-size: cover;
     }
 }
 
@@ -125,6 +131,7 @@ textarea.form-control {
 
 .wrapper {
     width: 100%;
+    
 }
 
 .contact-wrap {
@@ -134,15 +141,18 @@ textarea.form-control {
 
 .info-wrap {
     height: 400px;
+    
 }
 
 .dbox {
     width: 100%;
     margin-bottom: 25px;
+
 }
 
 .dbox p {
     margin-bottom: 0;
+
 }
 
 .dbox span {
@@ -177,6 +187,7 @@ textarea.form-control {
 
 .dbox .text {
     width: 100%;
+    text-align: center;
 }
 
 i {
@@ -189,12 +200,13 @@ i {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
+    margin-left: 10px;
 }
 
 .contactForm .form-control {
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 0;
+    padding: 10;
 }
 
 #contactForm .error {
