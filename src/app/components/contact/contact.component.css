@@ -78,20 +78,43 @@ h1, h2, h3, h4, h5,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-left: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    .img {
+        width: 75px;
+        height: 75px;
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .img {
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+    }
 }
 
 .form-control {
     height: 36px;
-    background: #e7e1e1;
+    background: #fff;
     color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
     border-radius: 2px;
     box-shadow: none !important;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 10px;
 }
 
 .form-control:focus, .form-control:active {
-   color: #f53333
+   color: #680e0e
 
     !important;
 }
@@ -105,7 +128,8 @@ textarea.form-control {
 }
 
 .contact-wrap {
-    background: #e7e1e1;
+    background: #fff;
+    border-radius: 20px;
 }
 
 .info-wrap {
@@ -127,7 +151,7 @@ textarea.form-control {
 }
 
 .dbox a {   
-     color: #f53333;
+     color: #680e0e;
 
 }
 
@@ -135,7 +159,7 @@ textarea.form-control {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    color:    #f53333;
+    color:    #680e0e;
     
     margin: 0 auto;
     margin-bottom: 20px;
@@ -201,7 +225,7 @@ i {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: rgb(243, 63, 63); 
+    color: rgb(151, 13, 13); 
     min-width: 200px;
     border: 0;
     border-radius: 4px;
@@ -256,7 +280,7 @@ i {
     border-color:  rgb(243, 63, 63);
   }
   .icon-background {
-    background-color:   #f53333;
+    background-color:   #ac0f0f;
      
     color: white; 
     padding: 10px; 
@@ -264,7 +288,7 @@ i {
     display: inline-block; 
   }
   .btn-custom {
-    background-color: #f53333; 
+    background-color: #ac0f0f; 
     color: white;
     border: none; 
     padding: 10px 20px; 

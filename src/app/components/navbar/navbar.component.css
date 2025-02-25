@@ -76,8 +76,15 @@ body {
 .ms-3 {
   margin-left: 1rem;
 }
-.Logo{
-  width:100% !important;
-  height:auto;
+.Logo {
+  width: 80% !important;
+  height: auto;
   margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+  .Logo {
+    width: 50% !important;
+    height: 50%;
+  }
 }
