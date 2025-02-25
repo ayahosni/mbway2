@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5,
 
 .form-control {
     height: 36px;
-    background: #fff;
+    background: #f7f3f3;
     color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
     border-radius: 2px;
@@ -135,7 +135,7 @@ textarea.form-control {
 }
 
 .contact-wrap {
-    background: #fff;
+    background: #fffefe;
     border-radius: 20px;
 }
 
@@ -161,7 +161,7 @@ textarea.form-control {
 }
 
 .dbox a {   
-     color: #680e0e;
+     color: #fff;
 
 }
 
@@ -172,7 +172,7 @@ textarea.form-control {
     color:    #680e0e;
     
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .dbox .icon:hover {

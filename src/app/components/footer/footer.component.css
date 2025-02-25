@@ -64,3 +64,34 @@
 footer{
     background: linear-gradient(to bottom, #1a1a1a, #000000);
 }
+.static-text {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .small-red-text {
+    color: #f53333; /* اللون الأحمر */
+    font-size: 2rem; /* حجم أصغر */
+    font-weight: bold; /* سمك عادي */
+  }
+  
+  .highlight-letters {
+    color: #fff; /* اللون الأبيض */
+    font-size: 3rem; /* حجم أكبر */
+    font-weight: bold; /* زيادة السمك */
+  }
+  
+  @media (max-width: 768px) {
+    .static-text {
+      font-size: 0.8rem;
+    }
+  
+    .small-red-text {
+      font-size: 1.5rem;
+    }
+  
+    .highlight-letters {
+      font-size: 1.5rem;
+    }
+  }
