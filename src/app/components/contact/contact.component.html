@@ -83,41 +83,61 @@
               <div class="col-md-7">
                 <div class="contact-wrap w-100 p-md-5 p-4">
                   <h3 class="mb-4" style="color: #ac0909;">Contact Us</h3>
-                  
-                  <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                  <form [formGroup]="contactForm" (ngSubmit)="sendEmail()" class="contactForm">
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
                           <label class="label" for="name">Full Name</label>
-                          <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                          <input type="text" class="form-control" formControlName="name" id="name" placeholder="Name">
+                          <small class="text-danger" *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+                            Name is required!
+                          </small>
                         </div>
                       </div>
-                      <div class="col-md-6"> 
+                      <div class="col-md-6">
                         <div class="form-group">
                           <label class="label" for="email">Email Address</label>
-                          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                          <input type="email" class="form-control" formControlName="email" id="email" placeholder="Email">
+                          <small class="text-danger" *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+                            Please enter a valid email!
+                          </small>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
                           <label class="label" for="subject">Subject</label>
-                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                          <input type="text" class="form-control" formControlName="subject" id="subject" placeholder="Subject">
+                          <small class="text-danger" *ngIf="contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched">
+                            Subject is required!
+                          </small>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label class="label" for="#">Message</label>
-                          <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder=""></textarea>
+                          <label class="label" for="message">Message</label>
+                          <textarea formControlName="message" class="form-control" id="message" cols="30" rows="4" placeholder=""></textarea>
+                          <small class="text-danger" *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+                            Message is required!
+                          </small>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
-                          <button class="btn btn-custom mt-4 fw-bold">Send</button>
-                          <div class="submitting"></div>
+                          <button class="btn btn-custom mt-4 fw-bold" type="submit" [disabled]="contactForm.invalid || isLoading">
+                            <span *ngIf="!isLoading">Send</span>
+                            <span *ngIf="isLoading">Sending...</span>
+                          </button>
                         </div>
                       </div>
                     </div>
+                  
+                    <!-- Success and Error Messages -->
+                    <div *ngIf="isSuccess" class="alert alert-success mt-3">Email sent successfully!</div>
+                    <div *ngIf="isError" class="alert alert-danger mt-3">Error sending email. Please try again!</div>
                   </form>
+                  
+
+
                 </div>
               </div>
             </div>
